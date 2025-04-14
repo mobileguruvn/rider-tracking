@@ -1,27 +1,27 @@
-# rider-trip
+# rider-tracking
 
-This is the **trip management module** for the Rider Tracker Android application, designed with **Clean Architecture** and optimized for **modular team-based development**.
+This is the **real-time tracking module** for the Rider Tracker Android app, structured with **Clean Architecture** and modularized for enterprise use.
 
 ## 🔍 What It Includes
 
-- `trip-contract`: defines trip data contracts and navigation interfaces
-- `trip-impl`: provides UI, ViewModel, and business logic for listing rider trips
-- Published to Maven for consumption in the main app
+- `tracking-contract`: declares tracking interfaces and navigation entry
+- `tracking-impl`: implements GPS tracking screen and logic
+- Google Maps & location tracking setup (in progress)
 
 ## 💡 Highlights
 
-- Owned by the **trip feature team**
-- Communicates only through contracts (`TripRepository`, `TripNavigator`)
-- Fully decoupled for scalability and independent versioning
+- Owned by the **tracking feature team**
+- Supports live GPS updates via `TrackingRepository`
+- Modular and versioned for isolated development
 
 ## 📦 Versioning
 
-Each module is versioned independently and published to GitHub Packages:
+Each module is published separately to GitHub Maven:
 
 
 ## 🧭 Navigation Entry
 
-Expose composable destinations via `TripNavigator`.
+Injected through `TrackingNavigator`, supports composable-based routing.
 
 ---
 
