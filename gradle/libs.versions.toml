@@ -16,7 +16,7 @@ dagger-hilt = "2.56"
 androidXHilt = "1.2.0"
 navigationCompose = "2.8.9"
 trackingContract = "1.0.0"
-trackingImpl = "1.0.0"
+trackingImpl = "1.0.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }

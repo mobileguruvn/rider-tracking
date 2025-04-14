@@ -8,7 +8,7 @@ import javax.inject.Inject
 
 class TrackingNavigation @Inject constructor() : TrackingNavigator {
     override fun trackingGraph(): NavGraphBuilder.() -> Unit = {
-        composable ("tracking") {
+        composable(TrackingRoutes.TrackingScreen.route) {
             TrackingScreen()
         }
     }
